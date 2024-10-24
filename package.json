@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
@@ -24,6 +26,7 @@
     "firebase": "^10.14.1",
     "firestore": "^1.1.6",
     "framer-motion": "^11.11.4",
+    "gh-pages": "^6.2.0",
     "init": "^0.1.2",
     "react": "^18.3.1",
     "react-beautiful-dnd": "^13.1.1",
